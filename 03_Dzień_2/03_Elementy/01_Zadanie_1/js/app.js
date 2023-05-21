@@ -1,5 +1,3 @@
-const links = document.querySelector(".links").querySelectorAll("li");
-
 const links = document.querySelector('.links').querySelectorAll('li');
 
 function getDataInfo(elements) {
