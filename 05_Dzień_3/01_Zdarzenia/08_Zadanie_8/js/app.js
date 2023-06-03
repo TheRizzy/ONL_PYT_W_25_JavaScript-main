@@ -1,23 +1,20 @@
-document.querySelector("#element1").addEventListener("click", function (e) {
-  console.log("Event in #element1 fired!");
+document.getElementById('element1').addEventListener('click', function(event) {
+  console.log('Event dla elementu pierwszego');
 });
 
-document.querySelector("#element2").addEventListener("click", function (e) {
-  console.log("Event in #element2 fired!");
+document.getElementById('element2').addEventListener('click', function(event) {
+  console.log('Event dla elementu drugiego');
 });
 
-document.querySelector("#element3").addEventListener("click", function (e) {
-  console.log("Event in #element3 fired!");
+document.getElementById('element3').addEventListener('click', function(event) {
+  event.stopPropagation();
 });
 
-document.querySelector("#element4").addEventListener("click", function (e) {
-  console.log("Event in #element4 fired!");
+document.getElementById('element4').addEventListener('click', function(event) {
+  console.log('Pierwszy event dla elementu czwartego');
 });
 
-document.querySelector("#element5").addEventListener("click", function (e) {
-  console.log("Event in #element5 fired!");
-});
-
-document.querySelector("#element5").addEventListener("click", function (e) {
-  console.log("Second event in #element5 fired!");
+document.getElementById('element5').addEventListener('click', function(event) {
+  console.log('Pierwszy event dla elementu piątego');
+  event.stopPropagation();
 });
