@@ -6,4 +6,6 @@ const multiValueArray = [
   [12, 15, 67]
 ];
 
-
+console.log(multiValueArray[3][2]); //7
+console.log(multiValueArray[2].length); //2
+console.log(multiValueArray[4][2]); //67
